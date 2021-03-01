@@ -14,6 +14,10 @@
 		907C889425EC9D7000EC44A9 /* dec_if.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C888E25EC9D7000EC44A9 /* dec_if.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907C889525EC9D7000EC44A9 /* interf_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889025EC9D7000EC44A9 /* interf_dec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907C889625EC9D7000EC44A9 /* interf_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889125EC9D7000EC44A9 /* interf_enc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C889C25ECCDC500EC44A9 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 907C889825ECCDC500EC44A9 /* wav.mm */; };
+		907C889D25ECCDC500EC44A9 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 907C889925ECCDC500EC44A9 /* amrFileCodec.mm */; };
+		907C889E25ECCDC500EC44A9 /* amrFileCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889A25ECCDC500EC44A9 /* amrFileCodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C889F25ECCDC500EC44A9 /* wav.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889B25ECCDC500EC44A9 /* wav.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		907C888E25EC9D7000EC44A9 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
 		907C889025EC9D7000EC44A9 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
 		907C889125EC9D7000EC44A9 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		907C889825ECCDC500EC44A9 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		907C889925ECCDC500EC44A9 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		907C889A25ECCDC500EC44A9 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		907C889B25ECCDC500EC44A9 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		907C887D25EC9D3E00EC44A9 /* EMVoiceConvert */ = {
 			isa = PBXGroup;
 			children = (
+				907C889725ECCDC500EC44A9 /* amrwapper */,
 				907C888B25EC9D6F00EC44A9 /* include */,
 				907C888725EC9D4E00EC44A9 /* libopencore-amrnb.a */,
 				907C888625EC9D4E00EC44A9 /* libopencore-amrwb.a */,
@@ -96,6 +105,17 @@
 			path = "opencore-amrnb";
 			sourceTree = "<group>";
 		};
+		907C889725ECCDC500EC44A9 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				907C889825ECCDC500EC44A9 /* wav.mm */,
+				907C889925ECCDC500EC44A9 /* amrFileCodec.mm */,
+				907C889A25ECCDC500EC44A9 /* amrFileCodec.h */,
+				907C889B25ECCDC500EC44A9 /* wav.h */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,6 +127,8 @@
 				907C888025EC9D3E00EC44A9 /* EMVoiceConvert.h in Headers */,
 				907C889525EC9D7000EC44A9 /* interf_dec.h in Headers */,
 				907C889625EC9D7000EC44A9 /* interf_enc.h in Headers */,
+				907C889E25ECCDC500EC44A9 /* amrFileCodec.h in Headers */,
+				907C889F25ECCDC500EC44A9 /* wav.h in Headers */,
 				907C889325EC9D7000EC44A9 /* if_rom.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907C889C25ECCDC500EC44A9 /* wav.mm in Sources */,
+				907C889D25ECCDC500EC44A9 /* amrFileCodec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
