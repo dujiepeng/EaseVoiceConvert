@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		907C888025EC9D3E00EC44A9 /* EMVoiceConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C887E25EC9D3E00EC44A9 /* EMVoiceConvert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C888825EC9D4E00EC44A9 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C888625EC9D4E00EC44A9 /* libopencore-amrwb.a */; };
+		907C888925EC9D4E00EC44A9 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 907C888725EC9D4E00EC44A9 /* libopencore-amrnb.a */; };
+		907C889325EC9D7000EC44A9 /* if_rom.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C888D25EC9D7000EC44A9 /* if_rom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C889425EC9D7000EC44A9 /* dec_if.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C888E25EC9D7000EC44A9 /* dec_if.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C889525EC9D7000EC44A9 /* interf_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889025EC9D7000EC44A9 /* interf_dec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C889625EC9D7000EC44A9 /* interf_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 907C889125EC9D7000EC44A9 /* interf_enc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		907C887B25EC9D3E00EC44A9 /* EMVoiceConvert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMVoiceConvert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		907C887E25EC9D3E00EC44A9 /* EMVoiceConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMVoiceConvert.h; sourceTree = "<group>"; };
+		907C887F25EC9D3E00EC44A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907C888625EC9D4E00EC44A9 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		907C888725EC9D4E00EC44A9 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		907C888D25EC9D7000EC44A9 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		907C888E25EC9D7000EC44A9 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		907C889025EC9D7000EC44A9 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		907C889125EC9D7000EC44A9 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907C887825EC9D3E00EC44A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907C888825EC9D4E00EC44A9 /* libopencore-amrwb.a in Frameworks */,
+				907C888925EC9D4E00EC44A9 /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		907C887125EC9D3E00EC44A9 = {
+			isa = PBXGroup;
+			children = (
+				907C887D25EC9D3E00EC44A9 /* EMVoiceConvert */,
+				907C887C25EC9D3E00EC44A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		907C887C25EC9D3E00EC44A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907C887B25EC9D3E00EC44A9 /* EMVoiceConvert.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907C887D25EC9D3E00EC44A9 /* EMVoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				907C888B25EC9D6F00EC44A9 /* include */,
+				907C888725EC9D4E00EC44A9 /* libopencore-amrnb.a */,
+				907C888625EC9D4E00EC44A9 /* libopencore-amrwb.a */,
+				907C887E25EC9D3E00EC44A9 /* EMVoiceConvert.h */,
+				907C887F25EC9D3E00EC44A9 /* Info.plist */,
+			);
+			path = EMVoiceConvert;
+			sourceTree = "<group>";
+		};
+		907C888B25EC9D6F00EC44A9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				907C888C25EC9D7000EC44A9 /* opencore-amrwb */,
+				907C888F25EC9D7000EC44A9 /* opencore-amrnb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		907C888C25EC9D7000EC44A9 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				907C888D25EC9D7000EC44A9 /* if_rom.h */,
+				907C888E25EC9D7000EC44A9 /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		907C888F25EC9D7000EC44A9 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				907C889025EC9D7000EC44A9 /* interf_dec.h */,
+				907C889125EC9D7000EC44A9 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		907C887625EC9D3E00EC44A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907C889425EC9D7000EC44A9 /* dec_if.h in Headers */,
+				907C888025EC9D3E00EC44A9 /* EMVoiceConvert.h in Headers */,
+				907C889525EC9D7000EC44A9 /* interf_dec.h in Headers */,
+				907C889625EC9D7000EC44A9 /* interf_enc.h in Headers */,
+				907C889325EC9D7000EC44A9 /* if_rom.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		907C887A25EC9D3E00EC44A9 /* EMVoiceConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907C888325EC9D3E00EC44A9 /* Build configuration list for PBXNativeTarget "EMVoiceConvert" */;
+			buildPhases = (
+				907C887625EC9D3E00EC44A9 /* Headers */,
+				907C887725EC9D3E00EC44A9 /* Sources */,
+				907C887825EC9D3E00EC44A9 /* Frameworks */,
+				907C887925EC9D3E00EC44A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMVoiceConvert;
+			productName = EMVoiceConvert;
+			productReference = 907C887B25EC9D3E00EC44A9 /* EMVoiceConvert.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907C887225EC9D3E00EC44A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = djp;
+				TargetAttributes = {
+					907C887A25EC9D3E00EC44A9 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 907C887525EC9D3E00EC44A9 /* Build configuration list for PBXProject "EMVoiceConvert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 907C887125EC9D3E00EC44A9;
+			productRefGroup = 907C887C25EC9D3E00EC44A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907C887A25EC9D3E00EC44A9 /* EMVoiceConvert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907C887925EC9D3E00EC44A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907C887725EC9D3E00EC44A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		907C888125EC9D3E00EC44A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		907C888225EC9D3E00EC44A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		907C888425EC9D3E00EC44A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EMVoiceConvert/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EMVoiceConvert",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easemob.EMVoiceConvert;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		907C888525EC9D3E00EC44A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EMVoiceConvert/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EMVoiceConvert",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easemob.EMVoiceConvert;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907C887525EC9D3E00EC44A9 /* Build configuration list for PBXProject "EMVoiceConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907C888125EC9D3E00EC44A9 /* Debug */,
+				907C888225EC9D3E00EC44A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907C888325EC9D3E00EC44A9 /* Build configuration list for PBXNativeTarget "EMVoiceConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907C888425EC9D3E00EC44A9 /* Debug */,
+				907C888525EC9D3E00EC44A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907C887225EC9D3E00EC44A9 /* Project object */;
+}
